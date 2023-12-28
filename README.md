@@ -45,7 +45,8 @@ python3 -m pip install --upgrade pip
 ```
 pip install -r requirements.txt
 ```
-## Запуск парсера
+* Запуск сервиса 
+
 ```
 flask run
 ```

@@ -1,24 +1,9 @@
-import string
-import random
-
 from flask import flash, redirect, render_template, url_for
 
 from . import app, db
 from .forms import URLForm
 from .models import URLMap
-
-
-def get_unique_short_id(length=6):
-    """
-    Алгоритм формирования коротких идентификаторов переменной длины.
-    """
-    symb = string.ascii_letters + string.digits
-    existing_urls = URLMap.query.all()
-    existing_ids = {url.short for url in existing_urls}
-    while True:
-        new_id = ''.join(random.choices(symb, k=length))
-        if new_id not in existing_ids:
-            return new_id
+from .utils import get_unique_short_id
 
 
 @app.route('/<string:short>')

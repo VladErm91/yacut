@@ -1,6 +1,6 @@
 # Сервис для создания коротких ссылок на основе Flask
-## Учебный проект Яндекс Практикум
-
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) 
+![Flask](https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white)
 ### Возможности сервиса:
 - генерация коротких ссылок и связь их с исходными длинными ссылками,
 - переадресация на исходный адрес при обращении к коротким ссылкам.
